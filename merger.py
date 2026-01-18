@@ -6,6 +6,7 @@ Uses FFmpeg to merge multiple video files into one
 import os
 import subprocess
 import shutil
+import platform
 from pathlib import Path
 from typing import Optional, Callable
 
@@ -48,9 +49,14 @@ class VideoMerger:
             return 0.0
 
         try:
+            # Derive ffprobe path correctly (handle windows paths)
+            ffmpeg_path = Path(self.ffmpeg_path)
+            ffprobe_name = ffmpeg_path.name.replace('ffmpeg', 'ffprobe')
+            ffprobe_path = str(ffmpeg_path.parent / ffprobe_name)
+
             result = subprocess.run(
                 [
-                    self.ffmpeg_path.replace('ffmpeg', 'ffprobe'),
+                    ffprobe_path,
                     '-v', 'error',
                     '-show_entries', 'format=duration',
                     '-of', 'default=noprint_wrappers=1:nokey=1',
@@ -110,7 +116,14 @@ class VideoMerger:
                 for video_file in video_files:
                     # Use absolute path and escape single quotes
                     abs_path = os.path.abspath(video_file)
-                    escaped_path = abs_path.replace("'", "'\\''")
+
+                    if platform.system() == 'Windows':
+                        # Windows: Use forward slashes and escape with backslash
+                        escaped_path = abs_path.replace('\\', '/').replace("'", "\\'")
+                    else:
+                        # Unix: Use shell-style escaping
+                        escaped_path = abs_path.replace("'", "'\\''")
+
                     f.write(f"file '{escaped_path}'\n")
 
             print(f"Merging {len(video_files)} videos...")
@@ -194,7 +207,14 @@ class VideoMerger:
             with open(concat_file, 'w', encoding='utf-8') as f:
                 for video_file in video_files:
                     abs_path = os.path.abspath(video_file)
-                    escaped_path = abs_path.replace("'", "'\\''")
+
+                    if platform.system() == 'Windows':
+                        # Windows: Use forward slashes and escape with backslash
+                        escaped_path = abs_path.replace('\\', '/').replace("'", "\\'")
+                    else:
+                        # Unix: Use shell-style escaping
+                        escaped_path = abs_path.replace("'", "'\\''")
+
                     f.write(f"file '{escaped_path}'\n")
 
             # Run FFmpeg with progress

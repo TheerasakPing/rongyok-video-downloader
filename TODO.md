@@ -88,10 +88,10 @@
 |----|----------|-----------|-----------|
 | 1 | URL วิดีโอหมดอายุหลังจากเวลาผ่านไป | ⚠️ Expected behavior | - |
 | 2 | ต้องติดตั้ง FFmpeg แยกต่างหาก | 📋 Documented | - |
-| 3 | FFprobe path derivation fails on Windows | 🐛 Bug | [#2](https://github.com/TheerasakPing/rongyok-video-downloader/issues/2) |
+| 3 | FFprobe path derivation fails on Windows | ✅ Fixed | [#2](https://github.com/TheerasakPing/rongyok-video-downloader/issues/2) |
 | 4 | Mouse wheel scrolling broken on macOS | 🐛 Bug | [#3](https://github.com/TheerasakPing/rongyok-video-downloader/issues/3) |
 | 5 | Speed calculation shows inaccurate values | 🐛 Bug | [#5](https://github.com/TheerasakPing/rongyok-video-downloader/issues/5) |
-| 6 | Concat file escaping not compatible with Windows | 🐛 Bug | [#7](https://github.com/TheerasakPing/rongyok-video-downloader/issues/7) |
+| 6 | Concat file escaping not compatible with Windows | ✅ Fixed | [#7](https://github.com/TheerasakPing/rongyok-video-downloader/issues/7) |
 | 7 | GUI __del__ may fail if initialization incomplete | 🐛 Bug | [#8](https://github.com/TheerasakPing/rongyok-video-downloader/issues/8) |
 
 ---
