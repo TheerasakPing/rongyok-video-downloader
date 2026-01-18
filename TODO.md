@@ -32,6 +32,10 @@
 - [x] 📦 Build executables ด้วย PyInstaller
 - [x] 🎉 Release v1.0.0 ไป GitHub
 
+### 🎯 Phase 5: Testing
+- [x] 🧪 เพิ่ม Unit tests สำหรับ `parser.py` (37 tests)
+- [x] 📦 เพิ่ม pytest และ pytest-cov ใน requirements.txt
+
 ---
 
 ## 🔄 กำลังทำ (In Progress)
@@ -60,9 +64,11 @@
 - [ ] 📱 สร้าง Mobile app (Expo/React Native)
 
 ### 🧪 Testing
-- [ ] ✅ เพิ่ม Unit tests
+- [x] ✅ เพิ่ม Unit tests สำหรับ parser.py (37 tests ผ่านทั้งหมด)
+- [ ] 🔍 เพิ่ม Unit tests สำหรับ downloader.py
+- [ ] 🔍 เพิ่ม Unit tests สำหรับ merger.py
 - [ ] 🔍 เพิ่ม Integration tests
-- [ ] 📊 เพิ่ม Code coverage
+- [ ] 📊 เพิ่ม Code coverage report
 
 ### 📚 Documentation
 - [ ] 📖 เพิ่ม API documentation
@@ -98,9 +104,9 @@
 | GUI Improvements | ✅ Done | 100% |
 | Repository Setup | ✅ Done | 100% |
 | CI/CD & Release | ✅ Done | 100% |
+| Testing | 🔄 In Progress | 25% |
 | UI/UX Improvements | 📝 Pending | 0% |
 | Performance | 📝 Pending | 0% |
-| Testing | 📝 Pending | 0% |
 
 ---
 
