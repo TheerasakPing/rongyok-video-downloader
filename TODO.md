@@ -1,6 +1,6 @@
 # 📋 TODO - Rongyok Video Downloader
 
-> 📅 อัพเดทล่าสุด: 2026-01-18
+> 📅 อัพเดทล่าสุด: 2026-01-18 (Code Review Complete)
 
 ---
 
@@ -67,23 +67,32 @@
 ### 🧪 Testing
 - [x] ✅ เพิ่ม Unit tests สำหรับ parser.py (37 tests ผ่านทั้งหมด)
 - [x] ✅ เพิ่ม Unit tests สำหรับ downloader.py (43 tests ผ่านทั้งหมด)
-- [ ] 🔍 เพิ่ม Unit tests สำหรับ merger.py
-- [ ] 🔍 เพิ่ม Integration tests
-- [ ] 📊 เพิ่ม Code coverage report
+- [ ] 🔍 เพิ่ม Unit tests สำหรับ merger.py → [#6](https://github.com/TheerasakPing/rongyok-video-downloader/issues/6)
+- [ ] 🔍 เพิ่ม Integration tests → [#10](https://github.com/TheerasakPing/rongyok-video-downloader/issues/10)
+- [ ] 📊 เพิ่ม Code coverage report → [#11](https://github.com/TheerasakPing/rongyok-video-downloader/issues/11)
 
 ### 📚 Documentation
 - [ ] 📖 เพิ่ม API documentation
 - [ ] 🎥 สร้าง Video tutorial
-- [ ] ❓ เพิ่ม FAQ section
+- [ ] ❓ เพิ่ม FAQ/Troubleshooting section → [#12](https://github.com/TheerasakPing/rongyok-video-downloader/issues/12)
+
+### 🔧 Enhancements (from Code Review)
+- [ ] 🔄 Add network retry logic → [#4](https://github.com/TheerasakPing/rongyok-video-downloader/issues/4)
+- [ ] ⏱️ Add rate limiting → [#9](https://github.com/TheerasakPing/rongyok-video-downloader/issues/9)
 
 ---
 
 ## 🐛 Known Issues
 
-| 🔢 | 📝 Issue | 🏷️ Status |
-|----|----------|-----------|
-| 1 | URL วิดีโอหมดอายุหลังจากเวลาผ่านไป | ⚠️ Expected behavior |
-| 2 | ต้องติดตั้ง FFmpeg แยกต่างหาก | 📋 Documented |
+| 🔢 | 📝 Issue | 🏷️ Status | 🔗 GitHub |
+|----|----------|-----------|-----------|
+| 1 | URL วิดีโอหมดอายุหลังจากเวลาผ่านไป | ⚠️ Expected behavior | - |
+| 2 | ต้องติดตั้ง FFmpeg แยกต่างหาก | 📋 Documented | - |
+| 3 | FFprobe path derivation fails on Windows | 🐛 Bug | [#2](https://github.com/TheerasakPing/rongyok-video-downloader/issues/2) |
+| 4 | Mouse wheel scrolling broken on macOS | 🐛 Bug | [#3](https://github.com/TheerasakPing/rongyok-video-downloader/issues/3) |
+| 5 | Speed calculation shows inaccurate values | 🐛 Bug | [#5](https://github.com/TheerasakPing/rongyok-video-downloader/issues/5) |
+| 6 | Concat file escaping not compatible with Windows | 🐛 Bug | [#7](https://github.com/TheerasakPing/rongyok-video-downloader/issues/7) |
+| 7 | GUI __del__ may fail if initialization incomplete | 🐛 Bug | [#8](https://github.com/TheerasakPing/rongyok-video-downloader/issues/8) |
 
 ---
 
@@ -112,5 +121,5 @@
 ---
 
 <p align="center">
-  📋 Last updated: 2026-01-18 | 🎬 v1.0.0
+  📋 Last updated: 2026-01-18 | 🎬 v1.0.0 | 🐛 11 GitHub Issues Created
 </p>
