@@ -34,6 +34,7 @@
 
 ### 🎯 Phase 5: Testing
 - [x] 🧪 เพิ่ม Unit tests สำหรับ `parser.py` (37 tests)
+- [x] 🧪 เพิ่ม Unit tests สำหรับ `downloader.py` (43 tests)
 - [x] 📦 เพิ่ม pytest และ pytest-cov ใน requirements.txt
 
 ---
@@ -65,7 +66,7 @@
 
 ### 🧪 Testing
 - [x] ✅ เพิ่ม Unit tests สำหรับ parser.py (37 tests ผ่านทั้งหมด)
-- [ ] 🔍 เพิ่ม Unit tests สำหรับ downloader.py
+- [x] ✅ เพิ่ม Unit tests สำหรับ downloader.py (43 tests ผ่านทั้งหมด)
 - [ ] 🔍 เพิ่ม Unit tests สำหรับ merger.py
 - [ ] 🔍 เพิ่ม Integration tests
 - [ ] 📊 เพิ่ม Code coverage report
@@ -104,7 +105,7 @@
 | GUI Improvements | ✅ Done | 100% |
 | Repository Setup | ✅ Done | 100% |
 | CI/CD & Release | ✅ Done | 100% |
-| Testing | 🔄 In Progress | 25% |
+| Testing | 🔄 In Progress | 50% |
 | UI/UX Improvements | 📝 Pending | 0% |
 | Performance | 📝 Pending | 0% |
 
