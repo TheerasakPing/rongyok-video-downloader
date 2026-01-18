@@ -1,0 +1,17 @@
+{
+  "version": "1.8.1",
+  "installedAt": "2026-01-18T02:54:07.310Z",
+  "targetDir": "/Volumes/       DriveE /code_project/_rongyok_video_downloader",
+  "ides": [
+    "claude",
+    "cursor",
+    "gemini"
+  ],
+  "components": {
+    "skills": true,
+    "agents": true,
+    "commands": true,
+    "templates": true,
+    "memory": true
+  }
+}
