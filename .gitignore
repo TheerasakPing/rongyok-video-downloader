@@ -64,7 +64,14 @@ Desktop.ini
 *.tar.gz
 *.zip
 
-# 🤖 Claude/AI
-.claude/memory/
-.claude/templates/
+# 🤖 Claude/AI/IDE Config
+.claude/
+.cursor/
+.cursorrules
+.gemini/
+.toh/
 .agent/
+CLAUDE.md
+
+# 🖥️ Tauri App (separate project)
+tauri-app/
